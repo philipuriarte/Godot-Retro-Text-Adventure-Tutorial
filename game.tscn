@@ -13,7 +13,13 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 1017.0
 margin_bottom = 593.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
 
 [node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
-margin_right = 1010.0
-margin_bottom = 586.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 990.0
+margin_bottom = 566.0
