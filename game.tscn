@@ -23,3 +23,7 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 990.0
 margin_bottom = 566.0
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/Rows"]
+margin_right = 970.0
+margin_bottom = 14.0
