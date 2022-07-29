@@ -31,11 +31,12 @@ margin_bottom = 580.0
 
 [node name="GameInfo" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_right = 984.0
-margin_bottom = 542.0
+margin_bottom = 496.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
 
 [node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
-margin_top = 546.0
+margin_top = 500.0
 margin_right = 984.0
 margin_bottom = 560.0
+rect_min_size = Vector2( 0, 60 )
