@@ -26,6 +26,6 @@ margin_top = 20.0
 margin_right = 1004.0
 margin_bottom = 580.0
 
-[node name="PanelContainer" type="PanelContainer" parent="Background/MarginContainer/Rows"]
+[node name="GameInfo" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_right = 984.0
 margin_bottom = 14.0
