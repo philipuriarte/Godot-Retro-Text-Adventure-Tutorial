@@ -31,10 +31,11 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 1004.0
 margin_bottom = 580.0
+custom_constants/separation = 20
 
 [node name="GameInfo" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_right = 984.0
-margin_bottom = 496.0
+margin_bottom = 480.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
 
