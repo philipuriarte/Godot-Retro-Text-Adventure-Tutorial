@@ -49,3 +49,8 @@ custom_styles/panel = SubResource( 3 )
 [node name="HBoxContainer" type="HBoxContainer" parent="Background/MarginContainer/Rows/InputArea"]
 margin_right = 984.0
 margin_bottom = 60.0
+
+[node name="Input" type="LineEdit" parent="Background/MarginContainer/Rows/InputArea/HBoxContainer"]
+margin_right = 984.0
+margin_bottom = 60.0
+size_flags_horizontal = 3
