@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
@@ -11,6 +11,8 @@ bg_color = Color( 0.215686, 0.215686, 0.215686, 1 )
 
 [sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 0.317647, 0.317647, 0.317647, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
 
 [sub_resource type="StyleBoxEmpty" id=4]
 
@@ -68,5 +70,7 @@ margin_right = 984.0
 margin_bottom = 60.0
 size_flags_horizontal = 3
 custom_fonts/font = ExtResource( 2 )
+custom_styles/focus = SubResource( 5 )
 custom_styles/normal = SubResource( 4 )
+max_length = 48
 script = ExtResource( 1 )
