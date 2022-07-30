@@ -55,6 +55,8 @@ scroll_horizontal_enabled = false
 
 [node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer"]
 
+[node name="InputResponse" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows"]
+
 [node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_top = 500.0
 margin_right = 984.0
