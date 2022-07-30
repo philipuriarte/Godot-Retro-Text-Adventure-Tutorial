@@ -67,6 +67,7 @@ margin_bottom = 75.0
 [node name="InputHistory" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
 margin_right = 984.0
 margin_bottom = 33.0
+custom_colors/font_color = Color( 0.631373, 0.631373, 0.631373, 0.631373 )
 custom_fonts/font = ExtResource( 4 )
 text = " > This is what the user typed"
 
