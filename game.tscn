@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://logic/input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
 [ext_resource path="res://logic/game.gd" type="Script" id=3]
+[ext_resource path="res://fonts/eb_garamond_16.tres" type="DynamicFont" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -61,16 +62,17 @@ size_flags_vertical = 3
 
 [node name="InputResponse" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows"]
 margin_right = 984.0
-margin_bottom = 56.0
+margin_bottom = 64.0
 
 [node name="InputHistory" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
 margin_right = 984.0
-margin_bottom = 14.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 4 )
 
 [node name="Response" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
-margin_top = 18.0
+margin_top = 26.0
 margin_right = 984.0
-margin_bottom = 56.0
+margin_bottom = 64.0
 custom_fonts/font = ExtResource( 2 )
 
 [node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
