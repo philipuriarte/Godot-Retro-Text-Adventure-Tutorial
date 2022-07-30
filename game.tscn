@@ -48,6 +48,10 @@ margin_bottom = 480.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
 
+[node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo"]
+margin_right = 984.0
+margin_bottom = 480.0
+
 [node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_top = 500.0
 margin_right = 984.0
