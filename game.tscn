@@ -68,6 +68,7 @@ margin_bottom = 64.0
 margin_right = 984.0
 margin_bottom = 22.0
 custom_fonts/font = ExtResource( 4 )
+text = " > This is what the user typed"
 
 [node name="Response" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
 margin_top = 26.0
