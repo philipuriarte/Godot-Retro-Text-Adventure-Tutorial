@@ -1,4 +1,4 @@
 extends LineEdit
 
 func _ready() -> void:
-	pass
+	grab_focus()
