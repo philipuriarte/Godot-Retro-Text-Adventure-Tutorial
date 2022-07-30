@@ -76,3 +76,6 @@ custom_styles/focus = SubResource( 5 )
 custom_styles/normal = SubResource( 4 )
 max_length = 48
 script = ExtResource( 1 )
+
+[connection signal="text_entered" from="Background/MarginContainer/Rows/InputArea/HBoxContainer/Input" to="." method="_on_Input_text_entered"]
+[connection signal="text_entered" from="Background/MarginContainer/Rows/InputArea/HBoxContainer/Input" to="Background/MarginContainer/Rows/InputArea/HBoxContainer/Input" method="_on_Input_text_entered"]
