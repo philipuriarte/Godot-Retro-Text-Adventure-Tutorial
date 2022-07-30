@@ -61,7 +61,7 @@ size_flags_vertical = 3
 
 [node name="InputResponse" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows"]
 margin_right = 984.0
-margin_bottom = 32.0
+margin_bottom = 56.0
 
 [node name="InputHistory" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
 margin_right = 984.0
@@ -70,7 +70,8 @@ margin_bottom = 14.0
 [node name="Response" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
 margin_top = 18.0
 margin_right = 984.0
-margin_bottom = 32.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 2 )
 
 [node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_top = 500.0
