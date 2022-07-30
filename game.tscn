@@ -3,7 +3,7 @@
 [ext_resource path="res://logic/input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
 [ext_resource path="res://logic/game.gd" type="Script" id=3]
-[ext_resource path="res://fonts/eb_garamond_16.tres" type="DynamicFont" id=4]
+[ext_resource path="res://fonts/eb_garamond_24.tres" type="DynamicFont" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -62,18 +62,18 @@ size_flags_vertical = 3
 
 [node name="InputResponse" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows"]
 margin_right = 984.0
-margin_bottom = 64.0
+margin_bottom = 75.0
 
 [node name="InputHistory" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
 margin_right = 984.0
-margin_bottom = 22.0
+margin_bottom = 33.0
 custom_fonts/font = ExtResource( 4 )
 text = " > This is what the user typed"
 
 [node name="Response" type="Label" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows/InputResponse"]
-margin_top = 26.0
+margin_top = 37.0
 margin_right = 984.0
-margin_bottom = 64.0
+margin_bottom = 75.0
 custom_fonts/font = ExtResource( 2 )
 text = "This is what the game will give back"
 
