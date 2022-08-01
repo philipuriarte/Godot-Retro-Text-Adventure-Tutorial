@@ -11,11 +11,11 @@ onready var scrollbar = scroll_container.get_v_scrollbar()
 
 
 func _ready() -> void:
-	scrollbar.connect("changed", self, handle_scrollbar_changed())
+	scrollbar.connect("changed", self, "handle_scrollbar_changed")
 
 
 func handle_scrollbar_changed():
-	pass
+	scroll_container.scroll_vertical = scrollbar.max_value
 
 
 # Wil execute when user presses enter
