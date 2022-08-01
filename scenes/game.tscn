@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://input.gd" type="Script" id=1]
+[ext_resource path="res://logic/input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
+[ext_resource path="res://logic/game.gd" type="Script" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -19,6 +20,7 @@ bg_color = Color( 0.317647, 0.317647, 0.317647, 1 )
 [node name="Game" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 3 )
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
@@ -45,6 +47,17 @@ margin_right = 984.0
 margin_bottom = 480.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer/Rows/GameInfo"]
+margin_right = 984.0
+margin_bottom = 480.0
+scroll_horizontal_enabled = false
+
+[node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer"]
+margin_right = 984.0
+margin_bottom = 480.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="InputArea" type="PanelContainer" parent="Background/MarginContainer/Rows"]
 margin_top = 500.0
@@ -74,3 +87,6 @@ custom_styles/focus = SubResource( 5 )
 custom_styles/normal = SubResource( 4 )
 max_length = 48
 script = ExtResource( 1 )
+
+[connection signal="text_entered" from="Background/MarginContainer/Rows/InputArea/HBoxContainer/Input" to="." method="_on_Input_text_entered"]
+[connection signal="text_entered" from="Background/MarginContainer/Rows/InputArea/HBoxContainer/Input" to="Background/MarginContainer/Rows/InputArea/HBoxContainer/Input" method="_on_Input_text_entered"]
