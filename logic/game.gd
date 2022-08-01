@@ -10,6 +10,14 @@ onready var scroll_container = $Background/MarginContainer/Rows/GameInfo/ScrollC
 onready var scrollbar = scroll_container.get_v_scrollbar()
 
 
+func _ready() -> void:
+	scrollbar.connect("changed", self, handle_scrollbar_changed())
+
+
+func handle_scrollbar_changed():
+	pass
+
+
 # Wil execute when user presses enter
 func _on_Input_text_entered(new_text: String) -> void:
 	var input_response = InputResponse.instance()
