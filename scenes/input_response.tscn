@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=1]
 [ext_resource path="res://fonts/eb_garamond_24.tres" type="DynamicFont" id=2]
+[ext_resource path="res://logic/input_response.gd" type="Script" id=3]
 
 [node name="InputResponse" type="VBoxContainer"]
 margin_right = 984.0
 margin_bottom = 75.0
+script = ExtResource( 3 )
 
 [node name="InputHistory" type="Label" parent="."]
 margin_right = 984.0
