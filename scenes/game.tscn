@@ -24,6 +24,7 @@ anchor_bottom = 1.0
 script = ExtResource( 3 )
 
 [node name="CommandProcessor" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource( 4 )
 
 [node name="Background" type="PanelContainer" parent="."]
