@@ -2,8 +2,8 @@ extends Node
 
 func process_command(input: String):
 	var words = input.split(" ", false)
-	var first_word = words[0]
-	var second_word = words[1]
+	var first_word = words[0].to_lower()
+	var second_word = words[1].to_lower()
 	
 	match first_word:
 		"go":
