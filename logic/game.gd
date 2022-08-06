@@ -25,12 +25,17 @@ func handle_scrollbar_changed():
 		scroll_con.scroll_vertical = max_scroll_len
 
 
-# Instance InputResponse scene as a child to HistoryRows
+# Instances InputResponse scene as a child to HistoryRows
 func _on_Input_text_entered(new_text: String) -> void:
 	if !new_text.empty():
 		var input_response = InputResponse.instance()
 		input_response.set_text(new_text, "Response")
 		history_rows.add_child(input_response)
-	
+		
+		delete_old_history()
+
+
+# Deletes HistoryRows children beyond limit
+func delete_old_history():
 	if history_rows.get_child_count() > max_lines_remembered:
 		history_rows.get_child(0).queue_free()
