@@ -14,4 +14,5 @@ func process_command(input: String):
 
 
 func go(second_word: String):
-	pass
+	if second_word.empty():
+		pass
