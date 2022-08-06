@@ -7,4 +7,8 @@ func process_command(input: String):
 	
 	match first_word:
 		"go":
-			pass
+			go(second_word)
+
+
+func go(second_word: String):
+	pass
