@@ -1,4 +1,4 @@
 extends Node
 
-func _ready() -> void:
+func process_command(first_word: String, second_word: String):
 	pass
