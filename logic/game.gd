@@ -30,7 +30,8 @@ func handle_scrollbar_changed():
 func _on_Input_text_entered(new_text: String) -> void:
 	if !new_text.empty():
 		var input_response = InputResponse.instance()
-		input_response.set_text(new_text, "Response")
+		var response = command_processor.process_command(new_text)
+		input_response.set_text(new_text, response)
 		history_rows.add_child(input_response)
 		
 		delete_old_history()
