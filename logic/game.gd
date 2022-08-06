@@ -4,6 +4,8 @@ extends Control
 # Contains the input_response scene
 const InputResponse = preload("res://scenes/input_response.tscn")
 
+export (int) var max_lines_remembered := 30
+
 var max_scroll_len := 0
 
 onready var history_rows = $Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows
