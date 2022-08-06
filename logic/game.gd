@@ -8,6 +8,7 @@ export (int) var max_lines_remembered := 30
 
 var max_scroll_len := 0
 
+onready var command_processor = $"%CommandProcessor"
 onready var history_rows = $Background/MarginContainer/Rows/GameInfo/ScrollContainer/HistoryRows
 onready var scroll_con = $Background/MarginContainer/Rows/GameInfo/ScrollContainer
 onready var scrollbar = scroll_con.get_v_scrollbar()
