@@ -25,6 +25,7 @@ func handle_scrollbar_changed():
 
 # Instance InputResponse scene as a child to HistoryRows
 func _on_Input_text_entered(new_text: String) -> void:
-	var input_response = InputResponse.instance()
-	input_response.set_text(new_text, "Response")
-	history_rows.add_child(input_response)
+	if !new_text.empty():
+		var input_response = InputResponse.instance()
+		input_response.set_text(new_text, "Response")
+		history_rows.add_child(input_response)
