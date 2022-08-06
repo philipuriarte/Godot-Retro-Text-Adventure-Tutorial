@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://logic/input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
 [ext_resource path="res://logic/game.gd" type="Script" id=3]
+[ext_resource path="res://logic/command_processor.gd" type="Script" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -23,6 +24,7 @@ anchor_bottom = 1.0
 script = ExtResource( 3 )
 
 [node name="CommandProcessor" type="Node" parent="."]
+script = ExtResource( 4 )
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
