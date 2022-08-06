@@ -54,6 +54,7 @@ size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer/Rows/GameInfo"]
+unique_name_in_owner = true
 margin_right = 984.0
 margin_bottom = 480.0
 scroll_horizontal_enabled = false
