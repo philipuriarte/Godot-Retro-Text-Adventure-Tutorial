@@ -13,6 +13,8 @@ func process_command(input: String) -> String:
 			return go(second_word)
 
 
-func go(second_word: String):
+func go(second_word: String) -> String:
 	if second_word.empty():
-		pass
+		return "Go where?"
+	
+	return "You go %s" % second_word
