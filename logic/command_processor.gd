@@ -20,3 +20,7 @@ func go(second_word: String) -> String:
 		return "Go where?"
 	
 	return "You go %s" % second_word
+
+
+func help() -> String:
+	return "Commands: go [location], help"
