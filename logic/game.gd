@@ -1,7 +1,7 @@
 extends Control
 
-
 # Contains the input_response scene
+const Response = preload("res://scenes/response.tscn")
 const InputResponse = preload("res://scenes/input_response.tscn")
 
 export(int) var max_lines_remembered := 30
