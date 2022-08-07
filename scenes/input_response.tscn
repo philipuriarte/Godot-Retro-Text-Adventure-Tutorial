@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=1]
-[ext_resource path="res://fonts/eb_garamond_24.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scenes/response.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/input_history.tscn" type="PackedScene" id=2]
 [ext_resource path="res://logic/input_response.gd" type="Script" id=3]
 
 [node name="InputResponse" type="VBoxContainer"]
@@ -10,16 +10,6 @@ margin_bottom = 75.0
 custom_constants/separation = 0
 script = ExtResource( 3 )
 
-[node name="InputHistory" type="Label" parent="."]
-margin_right = 984.0
-margin_bottom = 33.0
-custom_colors/font_color = Color( 0.631373, 0.631373, 0.631373, 0.631373 )
-custom_fonts/font = ExtResource( 2 )
-text = " > This is what the user typed"
+[node name="InputHistory" parent="." instance=ExtResource( 2 )]
 
-[node name="Response" type="Label" parent="."]
-margin_top = 33.0
-margin_right = 984.0
-margin_bottom = 71.0
-custom_fonts/font = ExtResource( 1 )
-text = "This is what the game will give back"
+[node name="Response" parent="." instance=ExtResource( 1 )]

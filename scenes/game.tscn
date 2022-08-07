@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://logic/input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
 [ext_resource path="res://logic/game.gd" type="Script" id=3]
+[ext_resource path="res://logic/command_processor.gd" type="Script" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -21,6 +22,10 @@ bg_color = Color( 0.317647, 0.317647, 0.317647, 1 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 3 )
+
+[node name="CommandProcessor" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource( 4 )
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
@@ -48,14 +53,25 @@ margin_bottom = 480.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer/Rows/GameInfo"]
+[node name="MarginContainer" type="MarginContainer" parent="Background/MarginContainer/Rows/GameInfo"]
 margin_right = 984.0
+margin_bottom = 480.0
+custom_constants/margin_right = 5
+custom_constants/margin_top = 5
+custom_constants/margin_left = 5
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer/Rows/GameInfo/MarginContainer"]
+unique_name_in_owner = true
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 979.0
 margin_bottom = 480.0
 scroll_horizontal_enabled = false
 
-[node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer"]
-margin_right = 984.0
-margin_bottom = 480.0
+[node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/MarginContainer/ScrollContainer"]
+unique_name_in_owner = true
+margin_right = 974.0
+margin_bottom = 475.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 20
