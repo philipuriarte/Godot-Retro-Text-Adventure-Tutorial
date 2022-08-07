@@ -57,13 +57,13 @@ custom_styles/panel = SubResource( 2 )
 margin_right = 984.0
 margin_bottom = 480.0
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer/Rows/GameInfo"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/MarginContainer/Rows/GameInfo/MarginContainer"]
 unique_name_in_owner = true
 margin_right = 984.0
 margin_bottom = 480.0
 scroll_horizontal_enabled = false
 
-[node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/ScrollContainer"]
+[node name="HistoryRows" type="VBoxContainer" parent="Background/MarginContainer/Rows/GameInfo/MarginContainer/ScrollContainer"]
 unique_name_in_owner = true
 margin_right = 984.0
 margin_bottom = 480.0
