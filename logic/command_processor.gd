@@ -11,6 +11,8 @@ func process_command(input: String) -> String:
 	match first_word:
 		"go":
 			return go(second_word)
+		"help":
+			return help()
 		_:
 			return "Invalid command - please try again."
 
