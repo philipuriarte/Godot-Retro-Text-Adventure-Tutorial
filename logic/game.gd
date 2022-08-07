@@ -18,6 +18,9 @@ onready var scrollbar = scroll_con.get_v_scrollbar()
 func _ready() -> void:
 	scrollbar.connect("changed", self, "handle_scrollbar_changed")
 	max_scroll_len = scrollbar.max_value
+	var starting_msg = Response.instance()
+	starting_msg.text = "You wake up and find yourself in a dark decrepit prison with no memory of how you got there. Find your way out."
+	add_response(starting_msg)
 
 
 # Auto-scroll functionality
