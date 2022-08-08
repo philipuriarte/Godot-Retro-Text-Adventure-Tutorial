@@ -30,8 +30,16 @@ script = ExtResource( 4 )
 [node name="RoomManager" type="Node" parent="."]
 
 [node name="Room" type="PanelContainer" parent="RoomManager"]
-margin_right = 14.0
-margin_bottom = 14.0
+margin_left = 114.0
+margin_top = -281.0
+margin_right = 128.0
+margin_bottom = -267.0
+
+[node name="RoomMargin" type="MarginContainer" parent="RoomManager/Room"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 7.0
+margin_bottom = 7.0
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
