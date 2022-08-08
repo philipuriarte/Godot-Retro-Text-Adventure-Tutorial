@@ -65,6 +65,7 @@ margin_top = 24.0
 margin_right = 226.0
 margin_bottom = 38.0
 text = "Room Description"
+autowrap = true
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
