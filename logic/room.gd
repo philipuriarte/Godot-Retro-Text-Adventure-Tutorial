@@ -1,3 +1,4 @@
+class_name RoomClass
 extends PanelContainer
 
 export (String) var room_name := ""

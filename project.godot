@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "PanelContainer",
+"class": "RoomClass",
+"language": "GDScript",
+"path": "res://logic/room.gd"
+} ]
+_global_script_class_icons={
+"RoomClass": ""
+}
+
 [application]
 
 config/name="Godot-Retro-Text-Adventure-Tutorial"
