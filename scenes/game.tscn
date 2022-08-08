@@ -41,6 +41,8 @@ margin_top = 7.0
 margin_right = 7.0
 margin_bottom = 7.0
 
+[node name="Rows" type="VBoxContainer" parent="RoomManager/Room/RoomMargin"]
+
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
