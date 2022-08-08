@@ -51,6 +51,7 @@ margin_left = 5.0
 margin_top = 5.0
 margin_right = 231.0
 margin_bottom = 231.0
+custom_constants/separation = 10
 
 [node name="RoomName" type="Label" parent="RoomManager/Room/RoomMargin/Rows"]
 margin_right = 226.0
@@ -58,9 +59,9 @@ margin_bottom = 14.0
 text = "Room Name"
 
 [node name="RoomDescription" type="Label" parent="RoomManager/Room/RoomMargin/Rows"]
-margin_top = 18.0
+margin_top = 24.0
 margin_right = 226.0
-margin_bottom = 32.0
+margin_bottom = 38.0
 text = "Room Description"
 
 [node name="Background" type="PanelContainer" parent="."]
