@@ -1,8 +1,10 @@
 extends Node
 
+var current_room = null
+
 
 func initialize(starting_room):
-	pass
+	current_room = starting_room
 
 
 func process_command(input: String) -> String:
