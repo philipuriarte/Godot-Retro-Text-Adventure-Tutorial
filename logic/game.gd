@@ -10,6 +10,7 @@ var max_scroll_len := 0
 
 # Variables that contain nodes
 onready var command_processor = $"%CommandProcessor"
+onready var room_manager = $"%RoomManager"
 onready var history_rows = $"%HistoryRows"
 onready var scroll_con = $"%ScrollContainer"
 onready var scrollbar = scroll_con.get_v_scrollbar()
