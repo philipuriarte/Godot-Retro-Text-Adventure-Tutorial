@@ -1,5 +1,10 @@
 extends Node
 
+
+func initialize(starting_room):
+	pass
+
+
 func process_command(input: String) -> String:
 	var words = input.split(" ", false)
 	var first_word = words[0].to_lower()
