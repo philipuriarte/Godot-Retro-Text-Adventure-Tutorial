@@ -1,4 +1,4 @@
 extends PanelContainer
 
-func _ready() -> void:
-	pass
+export (String) var room_name := ""
+export (String) var room_description := ""
