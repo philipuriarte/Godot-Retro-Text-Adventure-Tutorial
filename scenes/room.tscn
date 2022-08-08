@@ -4,10 +4,8 @@
 [ext_resource path="res://fonts/eb_garamond_16.tres" type="DynamicFont" id=2]
 
 [node name="Room" type="PanelContainer"]
-margin_left = 20.0
-margin_top = -444.0
-margin_right = 270.0
-margin_bottom = -194.0
+margin_right = 250.0
+margin_bottom = 250.0
 rect_min_size = Vector2( 250, 250 )
 
 [node name="RoomMargin" type="MarginContainer" parent="."]
