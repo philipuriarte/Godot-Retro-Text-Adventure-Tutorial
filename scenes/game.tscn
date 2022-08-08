@@ -53,14 +53,14 @@ margin_bottom = 480.0
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 2 )
 
-[node name="MarginContainer" type="MarginContainer" parent="Background/BackgroundMargin/Rows/GameInfo"]
+[node name="GameInfoMargin" type="MarginContainer" parent="Background/BackgroundMargin/Rows/GameInfo"]
 margin_right = 984.0
 margin_bottom = 480.0
 custom_constants/margin_right = 5
 custom_constants/margin_top = 5
 custom_constants/margin_left = 5
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Background/BackgroundMargin/Rows/GameInfo/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Background/BackgroundMargin/Rows/GameInfo/GameInfoMargin"]
 unique_name_in_owner = true
 margin_left = 5.0
 margin_top = 5.0
@@ -68,7 +68,7 @@ margin_right = 979.0
 margin_bottom = 480.0
 scroll_horizontal_enabled = false
 
-[node name="HistoryRows" type="VBoxContainer" parent="Background/BackgroundMargin/Rows/GameInfo/MarginContainer/ScrollContainer"]
+[node name="HistoryRows" type="VBoxContainer" parent="Background/BackgroundMargin/Rows/GameInfo/GameInfoMargin/ScrollContainer"]
 unique_name_in_owner = true
 margin_right = 974.0
 margin_bottom = 475.0
