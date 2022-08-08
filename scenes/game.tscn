@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://logic/input.gd" type="Script" id=1]
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
 [ext_resource path="res://logic/game.gd" type="Script" id=3]
 [ext_resource path="res://logic/command_processor.gd" type="Script" id=4]
+[ext_resource path="res://fonts/eb_garamond_24.tres" type="DynamicFont" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -55,15 +56,16 @@ custom_constants/separation = 10
 
 [node name="RoomName" type="Label" parent="RoomManager/Room/RoomMargin/Rows"]
 margin_right = 226.0
-margin_bottom = 14.0
+margin_bottom = 33.0
+custom_fonts/font = ExtResource( 5 )
 text = "Room Name"
 align = 1
 autowrap = true
 
 [node name="RoomDescription" type="Label" parent="RoomManager/Room/RoomMargin/Rows"]
-margin_top = 24.0
+margin_top = 43.0
 margin_right = 226.0
-margin_bottom = 38.0
+margin_bottom = 57.0
 text = "Room Description"
 autowrap = true
 
