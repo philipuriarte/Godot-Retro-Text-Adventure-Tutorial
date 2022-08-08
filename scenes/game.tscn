@@ -30,10 +30,10 @@ script = ExtResource( 4 )
 [node name="RoomManager" type="Node" parent="."]
 
 [node name="Room" type="PanelContainer" parent="RoomManager"]
-margin_left = 114.0
-margin_top = -281.0
-margin_right = 243.0
-margin_bottom = -235.0
+margin_left = 20.0
+margin_top = -444.0
+margin_right = 270.0
+margin_bottom = -194.0
 rect_min_size = Vector2( 250, 250 )
 
 [node name="RoomMargin" type="MarginContainer" parent="RoomManager/Room"]
@@ -41,19 +41,25 @@ margin_left = 7.0
 margin_top = 7.0
 margin_right = 243.0
 margin_bottom = 243.0
+custom_constants/margin_right = 5
+custom_constants/margin_top = 5
+custom_constants/margin_left = 5
+custom_constants/margin_bottom = 5
 
 [node name="Rows" type="VBoxContainer" parent="RoomManager/Room/RoomMargin"]
-margin_right = 236.0
-margin_bottom = 236.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 231.0
+margin_bottom = 231.0
 
 [node name="RoomName" type="Label" parent="RoomManager/Room/RoomMargin/Rows"]
-margin_right = 236.0
+margin_right = 226.0
 margin_bottom = 14.0
 text = "Room Name"
 
 [node name="RoomDescription" type="Label" parent="RoomManager/Room/RoomMargin/Rows"]
 margin_top = 18.0
-margin_right = 236.0
+margin_right = 226.0
 margin_bottom = 32.0
 text = "Room Description"
 
