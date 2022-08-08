@@ -4,7 +4,7 @@
 [ext_resource path="res://fonts/eb_garamond_28.tres" type="DynamicFont" id=2]
 [ext_resource path="res://logic/game.gd" type="Script" id=3]
 [ext_resource path="res://logic/command_processor.gd" type="Script" id=4]
-[ext_resource path="res://scenes/Room.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/room.tscn" type="PackedScene" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
@@ -31,6 +31,12 @@ script = ExtResource( 4 )
 [node name="RoomManager" type="Node" parent="."]
 
 [node name="Room" parent="RoomManager" instance=ExtResource( 5 )]
+margin_left = 52.0
+margin_top = -450.0
+margin_right = 302.0
+margin_bottom = -200.0
+room_name = "Prison Cell"
+room_description = "A dark prison cell."
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
