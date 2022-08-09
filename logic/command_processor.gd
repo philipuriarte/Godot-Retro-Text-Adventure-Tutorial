@@ -1,5 +1,7 @@
 extends Node
 
+signal response_generated(response_text)
+
 var current_room = null
 
 
