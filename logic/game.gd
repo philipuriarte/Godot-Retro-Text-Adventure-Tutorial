@@ -24,6 +24,7 @@ func _ready() -> void:
 	starting_msg.text = "You wake up and find yourself in a dark decrepit prison with no memory of how you got there. Find your way out."
 	add_response(starting_msg)
 	
+	command_processor.connect("response_generated", self, "handle_response")
 	command_processor.initialize(room_manager.get_child(0))
 
 
