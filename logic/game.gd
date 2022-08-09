@@ -31,12 +31,12 @@ func handle_scrollbar_changed():
 		scroll_con.scroll_vertical = max_scroll_len
 
 
-# Instances InputResponse scene and sets its text
+# Instances InputResponse scene and sets its processed text
 func _on_Input_text_entered(new_text: String) -> void:
 	if !new_text.empty():
 		var input_response = InputResponse.instance()
 		var response = command_processor.process_command(new_text)
-		input_response.set_text(new_text, response)		
+		input_response.set_text(new_text, response)
 		add_response(input_response)
 
 
