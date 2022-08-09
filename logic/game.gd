@@ -20,6 +20,8 @@ func _ready() -> void:
 	scrollbar.connect("changed", self, "handle_scrollbar_changed")
 	max_scroll_len = scrollbar.max_value
 	
+	handle_response("You wake up with no memory of how you got there. Find your way out.")
+	
 	command_processor.connect("response_generated", self, "handle_response")
 	command_processor.initialize(room_manager.get_child(0))
 
