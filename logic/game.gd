@@ -41,7 +41,7 @@ func _on_Input_text_entered(new_text: String) -> void:
 
 
 # Instances Response scene and sets its text
-func handle_response(response_text):
+func handle_response(response_text: String):
 	var response = Response.instance()
 	response.text = response_text
 	add_response(response)
