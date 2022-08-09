@@ -31,7 +31,7 @@ func handle_scrollbar_changed():
 		scroll_con.scroll_vertical = max_scroll_len
 
 
-# Instances InputResponse scene as a child to HistoryRows
+# Instances InputResponse scene and sets its text
 func _on_Input_text_entered(new_text: String) -> void:
 	if !new_text.empty():
 		var input_response = InputResponse.instance()
@@ -40,12 +40,14 @@ func _on_Input_text_entered(new_text: String) -> void:
 		add_response(input_response)
 
 
+# Instances Response scene and sets its text
 func handle_response(response_text):
 	var response = Response.instance()
 	response.text = response_text
 	add_response(response)
 
 
+# Adds a scene as a child to HistoryRows
 func add_response(response: Control):
 	history_rows.add_child(response)
 	delete_old_history()
