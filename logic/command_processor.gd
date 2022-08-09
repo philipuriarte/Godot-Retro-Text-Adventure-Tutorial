@@ -35,3 +35,8 @@ func go(second_word: String) -> String:
 
 func help() -> String:
 	return "Commands: go [location], help"
+
+func change_room(new_room: RoomClass):
+	current_room = new_room
+	emit_signal("response_generated", "You go to " + new_room.room_name)
+	emit_signal("response_generated", new_room.room_description)
