@@ -38,5 +38,8 @@ func help() -> String:
 
 func change_room(new_room: RoomClass):
 	current_room = new_room
-	emit_signal("response_generated", "You go to " + new_room.room_name)
-	emit_signal("response_generated", new_room.room_description)
+	var room_data = PoolStringArray([
+		"You are now in: " + new_room.room_name + ".", new_room.room_description,
+		"Exits: "
+	]).join("\n")
+	emit_signal("response_generated", room_data)
