@@ -6,7 +6,7 @@ var current_room = null
 
 
 func initialize(starting_room):
-	current_room = starting_room
+	change_room(starting_room)
 
 
 func process_command(input: String) -> String:
