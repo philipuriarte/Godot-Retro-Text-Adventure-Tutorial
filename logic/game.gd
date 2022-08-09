@@ -20,10 +20,6 @@ func _ready() -> void:
 	scrollbar.connect("changed", self, "handle_scrollbar_changed")
 	max_scroll_len = scrollbar.max_value
 	
-	var starting_msg = Response.instance()
-	starting_msg.text = "You wake up and find yourself in a dark decrepit prison with no memory of how you got there. Find your way out."
-	add_response(starting_msg)
-	
 	command_processor.connect("response_generated", self, "handle_response")
 	command_processor.initialize(room_manager.get_child(0))
 
@@ -42,6 +38,12 @@ func _on_Input_text_entered(new_text: String) -> void:
 		var response = command_processor.process_command(new_text)
 		input_response.set_text(new_text, response)		
 		add_response(input_response)
+
+
+func handle_response(response_text):
+	var response = Response.instance()
+	response.text = response_text
+	add_response(response)
 
 
 func add_response(response: Control):
